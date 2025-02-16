@@ -29,8 +29,7 @@ options:
                         Start line number (0-based index)
   -el END_LINE, --end_line END_LINE
                         End line number (0-based index, -1 to read until the end)
-  -T TOKENIZER, --tokenizer TOKENIZER
-                        Tokenizer type (B, TIKTOKEN)
+  -T, --tokenizer Tokenizer type (B,TIKTOKEN, BPE, WP, SP, ULM, BL-BPE, CHAR, T5)
   -e, --encode          Encode the input text
   -d, --decode          Decode the input token IDs
   -pretty, --pretty     Display line numbers with encoded/decoded text
@@ -52,8 +51,7 @@ Tokenize text using different tokenizers.
 
 options:
   -h, --help            show this help message and exit
-  -T TOKENIZER, --tokenizer 
-                        Tokenizer type (B,TIKTOKEN, BPE, WP, SP, ULM, BL-BPE, CHAR, T5)
+  -T, --tokenizer       Tokenizer type (B,TIKTOKEN, BPE, WP, SP, ULM, BL-BPE, CHAR, T5)
   -e, --encode          Encode the input text
   -d, --decode          Decode the input token IDs
   -s TEXT, --text TEXT  Input text to encode (used with -e)
